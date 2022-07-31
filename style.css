@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.aside{
+    height: 100vh;
+    background-color: #363A45;
+    padding: 0 !important;
+}
+.aside-header{
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.aside-header h2{
+    color: #fff;
+}
+.contact-users{
+    padding: 15px 0 15px 10px;
+    background-color: #F2F2F2;
+    height: 90vh;
+    
+}
+.contact-users-1{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+}
+.user{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #F2F2F2;
+    padding: 15px;
+    gap: 10px;
+    cursor: pointer;
+}
+.contact-users-1 h4{
+    color: #363A45;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.chat-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 !important;
+}
+.main-header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 2px solid #F2F2F2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.main-header h4{
+    color: #363A45;
+}
+.input{
+    width: 100%;
+    height: 90vh;
+    padding-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#myInput{
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #363A45;
+    outline: none;
+    border: none;
+    
+    
+}
+.scroll{
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+.button-and-input-0{
+    width: 100%;
+    border-top: 2px solid #F2F2F2;
+    padding: 20px 0 20px 15px;
+}
+.button-and-input{
+    
+    display: flex;
+    width: 90%;
+    margin: auto;
+    
+}
+.button-and-input #addButton{
+    background: none;
+    border: none;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #363A45;
+}
+.add-message p, .input p{
+    padding: 13px 30px;
+    border-radius: 28px;
+    background-color: #363A45;
+    max-width: 50%;
+    color: #fff;
+    
+}
+.add-message{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+.recieve-message{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 97%;
+    margin: auto;
+}
+@media (max-width:768px){
+    .aside{
+        display: none;
+    }
+    .recieve-message{
+        width: 90%;
+    }
+    .add-message{
+        width: 90%;
+    }
+}
